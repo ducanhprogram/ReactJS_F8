@@ -95,6 +95,8 @@ const TodoList = () => {
             newTodoList.splice(index, 1);
             setTodoList(newTodoList);
             saveLocalStorage(newTodoList);
+            setTodos("");
+            setIndexTodo(null);
             return;
         }
     };
